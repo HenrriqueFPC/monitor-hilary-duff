@@ -6,7 +6,7 @@ Script em Python que vigia a Ticketmaster Brasil e avisa no celular e no PC quan
 
 A Hilary Duff anunciou um show único no Brasil, dia 13 de agosto de 2027, no Espaço Unimed (São Paulo), pela the lucky me tour. A pré-venda esgotou em uns 40 minutos. No dia 2 de outubro de 2026 abriram uma data extra, 14 de agosto, e quando eu fui olhar o Camarote A/B dessa data também já estava esgotado.
 
-Eu queria camarote. Ficar dando F5 na página o dia inteiro não ia rolar, então pedi ajuda pro Claude (Claude Code) e montamos isso no mesmo dia. A ideia inicial era só saber de uma terceira data com antecedência. Com o monitor rodando, apareceu a outra utilidade: ingresso de camarote volta sozinho de vez em quando, quando alguém desiste, o pagamento falha ou o carrinho expira. Só que some rápido.
+Eu queria camarote. Ficar dando F5 na página o dia inteiro não ia rolar, então montei isso no mesmo dia usando o [Claude Code](https://claude.com/claude-code). A ideia inicial era só saber de uma terceira data com antecedência. Com o monitor rodando, apareceu a outra utilidade: ingresso de camarote volta sozinho de vez em quando, quando alguém desiste, o pagamento falha ou o carrinho expira. Só que some rápido.
 
 O que ele pegou nas primeiras semanas:
 
@@ -15,6 +15,10 @@ O que ele pegou nas primeiras semanas:
 - 09/10, 17:59: o camarote 13A do dia 14 liberou, e de novo às 18:06.
 
 Por causa desse primeiro caso de dois minutos, o intervalo de checagem das datas caiu de 2 minutos pra 5 segundos.
+
+## Feito com Claude Code
+
+O projeto inteiro foi feito conversando com o [Claude Code](https://claude.com/claude-code), o assistente de programação da Anthropic. Eu dizia o que queria em português, do jeito que falaria com um amigo ("monitora todas as datas", "só show no Brasil", "a notificação já tem que vir com o link", "45 segundos tá muito tempo"), e o Claude Code fazia o resto: investigou como a página da Ticketmaster entrega os dados, achou as fontes extras (fila virtual, Live Nation, Google News, X), escreveu e testou o script, simulou os alertas antes de ligar de verdade e deixou tudo rodando no meu PC. Os ajustes vieram depois, conforme o monitor ia sendo usado.
 
 ## O que ele vigia
 
