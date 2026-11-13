@@ -1,0 +1,7 @@
+{
+  "ntfy_topic": "",
+  "watch_sectors": ["camarote"],
+  "open_browser_on_alert": true,
+  "popup_on_alert": true,
+  "heartbeat_hours": 24
+}

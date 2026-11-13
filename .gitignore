@@ -1,0 +1,12 @@
+# configuracao local (tem o topico do ntfy) e arquivos que o monitor gera
+config.json
+state.json
+state.json.tmp
+monitor.log
+monitor.log.1
+monitor.pid
+ALERTAS.txt
+__pycache__/
+
+# guia local do vault do Obsidian (o README cobre o mesmo conteudo)
+LEIA-ME.md
